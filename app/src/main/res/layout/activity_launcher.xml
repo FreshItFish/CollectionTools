@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/welcome"
+    tools:context=".ui.ahead.guide.CountDownTimeLauncher">
+    <FrameLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_red_radio">
+        <TextView
+            android:id="@+id/launcher_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_marginLeft="5dp"
+            android:text="9"/>
+    </FrameLayout>
+</RelativeLayout>

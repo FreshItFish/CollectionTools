@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/basetoolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <FrameLayout
+            android:id="@+id/heartbeat_fl_01"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_redio_text_02" />
+
+        <FrameLayout
+            android:id="@+id/heartbeat_fl_02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_redio_text_02" />
+
+        <FrameLayout
+            android:id="@+id/heartbeat_fl_03"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_redio_text" />
+
+        <TextView
+            android:id="@+id/heartbeat_tv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_redio_text"
+            android:gravity="center"
+            android:text="心跳"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

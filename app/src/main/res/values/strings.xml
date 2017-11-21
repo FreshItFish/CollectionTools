@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Android功能合集</string>
+    <string name="copyright">版权所有：武汉铁路局  武汉通信段</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="title_activity_second">简单的recyclerView实现</string>
+
+    <!--顶部右侧menu菜单-->
+    <string name="menu_add">添加</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_exit">退出</string>
+
+    <!--仿小米运动-->
+    <string name="sub_title_separator">|</string>
+    <string name="sub_title_format" formatted="false">%.1f km | %d kcal</string>
+    <string name="connect">CONNECT</string>
+    <string name="disconnect">DISCONNECT</string>
+</resources>

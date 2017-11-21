@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 圆角进度条（开始） -->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!--刻度尺ruler-->
+    <declare-styleable name="BooheeRuler">
+        <attr name="minScale" format="integer"/>
+        <attr name="maxScale" format="integer"/>
+        <attr name="smallScaleLength" format="dimension"/>
+        <attr name="smallScaleWidth" format="dimension"/>
+        <attr name="bigScaleLength" format="dimension"/>
+        <attr name="bigScaleWidth" format="dimension"/>
+        <attr name="cursorHeight" format="dimension"/>
+        <attr name="cursorWidth" format="dimension"/>
+        <attr name="textMarginTop" format="dimension"/>
+        <attr name="numberTextSize" format="dimension"/>
+        <attr name="scaleInterval" format="dimension"/>
+        <attr name="numberTextColor" format="color"/>
+        <attr name="scaleColor" format="color"/>
+        <attr name="cursorDrawable" format="dimension"/>
+        <attr name="currentScale" format="float"/>
+        <attr name="count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="KgNumberLayout">
+        <attr name="scaleTextSize" format="dimension"/>
+        <attr name="kgTextSize" format="dimension"/>
+        <attr name="scaleTextColor" format="color"/>
+        <attr name="kgTextColor" format="color"/>
+        <attr name="kgUnitText" format="string"/>
+    </declare-styleable>
+
+    <!--自定义view实现进度条-->
+    <declare-styleable name="FlikerProgressBar">
+        <attr name="fpb_textSize" format="dimension"/>
+
+        <attr name="loadingColor" format="color"/>
+
+        <attr name="stopColor" format="color"/>
+
+        <attr name="radius" format="dimension"/>
+
+        <attr name="borderWidth" format="dimension"/>
+
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ahead"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zxtc.collectiontools.ui.ahead.AheadDemoActivity">
+
+    <include layout="@layout/basetoolbar" />
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:divider="@color/lightgray"
+        android:dividerHeight="1.5dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base">
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- toolbar 颜色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+
+        <item name="actionOverflowMenuStyle">@style/MenuStyle</item>
+    </style>
+
+    <!--菜单样式-->
+    <style name="MenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <!--菜单与toolbar的距离-->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!--菜单背景色-->
+        <item name="android:popupBackground">?attr/colorPrimaryDark</item>
+    </style>
+</resources>

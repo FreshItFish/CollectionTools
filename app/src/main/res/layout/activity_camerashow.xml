@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/basetoolbar"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="点击拍照"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="10dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="点击上传"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_below="@id/layout"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/camerashow_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/camerashow_tv"
+        android:layout_marginTop="10dp"
+        android:background="#000"/>
+
+    <com.zxtc.collectiontools.widget.ZoomImageView
+        android:id="@+id/zoomimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/camerashow_tv"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

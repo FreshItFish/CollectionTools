@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxtc.collectiontools">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_LOCATION_POLICY" />
+
+    <application
+        android:name="com.zxtc.collectiontools.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.zxtc.collectiontools.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--引导类集合-->
+        <activity android:name="com.zxtc.collectiontools.ui.ahead.AheadDemoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.ahead.guide.CountDownTimeLauncher"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.ahead.guide.GuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.ahead.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <!--列表类集合-->
+        <activity android:name="com.zxtc.collectiontools.ui.list.ListDemoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.list.simplerecyclerview.SecondActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.list.recyclerview.MyRecyclerViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.list.sortlistview.SortlistviewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.list.CoordinatorLayoutdemo.CoordinatorLayoutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.list.recyclerview_usebaseadapter.PullToRefreshActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <!--控件类集合-->
+        <activity android:name="com.zxtc.collectiontools.ui.controller.ControllerDemoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.controller.progressbar.ProgressBarActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.controller.progressbar.progressweight.FlikerProgressActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.controller.heartbeat.HeartBeatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.controller.ruler.RulerDemoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.controller.sportcircleconnect.SportCircleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.controller.openmapguide.OpenGuideMapActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <!--功能类集合-->
+        <activity android:name="com.zxtc.collectiontools.ui.function.FunctionDemoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.function.testloonandroid.MyLoonAndroidActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.function.upload.UploadActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.zxtc.collectiontools.ui.function.camerademo.CameraShowActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
