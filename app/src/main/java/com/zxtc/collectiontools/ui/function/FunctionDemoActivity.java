@@ -15,6 +15,7 @@ import com.zxtc.collectiontools.base.BaseActivity;
 import com.zxtc.collectiontools.ui.function.camerademo.CameraShowActivity;
 import com.zxtc.collectiontools.ui.function.testloonandroid.MyLoonAndroidActivity;
 import com.zxtc.collectiontools.ui.function.upload.UploadActivity;
+import com.zxtc.collectiontools.utils.ConstantUtils;
 import com.zxtc.collectiontools.utils.EmailTool;
 
 import java.io.File;
@@ -47,7 +48,7 @@ public class FunctionDemoActivity extends BaseActivity implements AdapterView.On
 
     @Override
     public void doBusiness(Context mContext) {
-        List<String> date = MyConstant.getDate(getResources().getStringArray(R.array.function_ui_type));
+        List<String> date = ConstantUtils.getDate(getResources().getStringArray(R.array.function_ui_type));
         listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,date));
         listView.setOnItemClickListener(this);
     }

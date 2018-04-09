@@ -21,6 +21,7 @@ import com.zxtc.collectiontools.ui.ahead.AheadDemoActivity;
 import com.zxtc.collectiontools.ui.controller.ControllerDemoActivity;
 import com.zxtc.collectiontools.ui.function.FunctionDemoActivity;
 import com.zxtc.collectiontools.ui.list.ListDemoActivity;
+import com.zxtc.collectiontools.utils.ConstantUtils;
 import com.zxtc.collectiontools.utils.ToastUtils;
 
 import java.util.List;
@@ -69,7 +70,7 @@ public class MainActivity extends BaseActivity implements AdapterView.OnItemClic
 
     @Override
     public void doBusiness(Context mContext) {
-        List<String> date = MyConstant.getDate(getResources().getStringArray(R.array.main_ui_type));
+        List<String> date = ConstantUtils.getDate(getResources().getStringArray(R.array.main_ui_type));
         listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,date));
         listView.setOnItemClickListener(this);
     }

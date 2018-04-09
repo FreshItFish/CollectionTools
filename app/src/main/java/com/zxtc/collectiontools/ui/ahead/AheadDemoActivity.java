@@ -13,6 +13,7 @@ import com.zxtc.collectiontools.ui.ahead.guide.CountDownTimeLauncher;
 import com.zxtc.collectiontools.ui.ahead.guide.GuideActivity;
 import com.zxtc.collectiontools.ui.ahead.login.LoginActivity;
 import com.zxtc.collectiontools.base.BaseActivity;
+import com.zxtc.collectiontools.utils.ConstantUtils;
 
 import java.util.List;
 
@@ -36,7 +37,7 @@ public class AheadDemoActivity extends BaseActivity implements AdapterView.OnIte
 
     @Override
     public void doBusiness(Context mContext) {
-        List<String> date = MyConstant.getDate(getResources().getStringArray(R.array.ahead_ui_type));
+        List<String> date = ConstantUtils.getDate(getResources().getStringArray(R.array.ahead_ui_type));
         listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,date));
         listView.setOnItemClickListener(this);
     }

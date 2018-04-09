@@ -15,6 +15,8 @@ import com.zxtc.collectiontools.ui.list.recyclerview.MyRecyclerViewActivity;
 import com.zxtc.collectiontools.ui.list.recyclerview_usebaseadapter.PullToRefreshActivity;
 import com.zxtc.collectiontools.ui.list.simplerecyclerview.SecondActivity;
 import com.zxtc.collectiontools.ui.list.sortlistview.SortlistviewActivity;
+import com.zxtc.collectiontools.ui.list.treepeople.TreePeopleActivity;
+import com.zxtc.collectiontools.utils.ConstantUtils;
 
 import java.util.List;
 
@@ -38,7 +40,7 @@ public class ListDemoActivity extends BaseActivity implements AdapterView.OnItem
 
     @Override
     public void doBusiness(Context mContext) {
-        List<String> date = MyConstant.getDate(getResources().getStringArray(R.array.list_ui_type));
+        List<String> date = ConstantUtils.getDate(getResources().getStringArray(R.array.list_ui_type));
         listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,date));
         listView.setOnItemClickListener(this);
     }
@@ -61,6 +63,9 @@ public class ListDemoActivity extends BaseActivity implements AdapterView.OnItem
                 break;
             case 4:
                 intent = new Intent(ListDemoActivity.this, PullToRefreshActivity.class);
+                break;
+            case 5:
+                intent = new Intent(ListDemoActivity.this, TreePeopleActivity.class);
                 break;
             default:
                 break;

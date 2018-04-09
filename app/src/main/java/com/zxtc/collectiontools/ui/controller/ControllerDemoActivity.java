@@ -15,6 +15,7 @@ import com.zxtc.collectiontools.ui.controller.openmapguide.OpenGuideMapActivity;
 import com.zxtc.collectiontools.ui.controller.progressbar.ProgressBarActivity;
 import com.zxtc.collectiontools.ui.controller.ruler.RulerDemoActivity;
 import com.zxtc.collectiontools.ui.controller.sportcircleconnect.SportCircleActivity;
+import com.zxtc.collectiontools.utils.ConstantUtils;
 
 import java.util.List;
 
@@ -42,7 +43,7 @@ public class ControllerDemoActivity extends BaseActivity implements AdapterView.
 
     @Override
     public void doBusiness(Context mContext) {
-        List<String> date = MyConstant.getDate(getResources().getStringArray(R.array.controller_ui_type));
+        List<String> date = ConstantUtils.getDate(getResources().getStringArray(R.array.controller_ui_type));
         listView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,date));
         listView.setOnItemClickListener(this);
     }

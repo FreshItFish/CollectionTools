@@ -28,7 +28,7 @@ public class MyRecyclerViewActivity extends BaseActivity {
 
     @Override
     public void initView(View mContextView) {
-        getToolbarTitle().setText("上滑加载更多测试");
+        getToolbarTitle().setText("RecyclerView实现分页加载");
         getSubTitle().setText(null);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.myreecycler_rlist);

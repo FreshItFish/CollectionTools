@@ -66,4 +66,6 @@ dependencies {
     //注解类 loonandroid 框架(类似butterknife)
     compile files('libs/loonandroid 3.0.jar')
     compile files('libs/dex.jar')
+    //EventBus事件总线
+    compile 'org.greenrobot:eventbus:3.0.0'
 }

@@ -68,6 +68,10 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
 
+        <activity android:name="com.zxtc.collectiontools.ui.list.treepeople.TreePeopleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
         <!--控件类集合-->
         <activity android:name="com.zxtc.collectiontools.ui.controller.ControllerDemoActivity"
             android:launchMode="singleTask"
