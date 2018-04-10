@@ -66,6 +66,9 @@ public class ListDemoActivity extends BaseActivity implements AdapterView.OnItem
                 break;
             case 5:
                 intent = new Intent(ListDemoActivity.this, TreePeopleActivity.class);
+                intent.putExtra("type", "2");
+                //本次请求的标记，用于当一个页面要多次调用选人界面时，拿到选择结果的时候做区分
+                intent.putExtra("flag", "1");
                 break;
             default:
                 break;
