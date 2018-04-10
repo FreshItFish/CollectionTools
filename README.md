@@ -1,9 +1,9 @@
-# Android CollectionTools -- demos collections for android
+# Android CollectionTools -- demos collection for android
 
-##### ---( 工作开发中收集的Android实用开发插件及框架，以功能demo样式集成到本项目 )
-
+##### ( 工作开发中收集的Android实用开发插件及框架，以功能demo样式集成到本项目 )
+#
 #### 当前包含的样例有
-
+# 
 * 引导页面整理
     * 指示器引导页面、倒计时引导页面.
 * 列表展示整理
