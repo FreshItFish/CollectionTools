@@ -1,6 +1,6 @@
 # Android CollectionTools -- demos collections for android
 
-## 工作开发中收集的Android实用开发插件及框架，以功能demo样式集成到本项目
+##### ---( 工作开发中收集的Android实用开发插件及框架，以功能demo样式集成到本项目 )
 
 #### 当前包含的样例有
 
